@@ -1,0 +1,117 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    transition: all 0.3s ease-in-out;
+}
+
+body {
+    background-color: rgba(244, 244, 244, 0.408);
+}
+
+/* Style the navigation bar */
+header {
+    background-color: rgba(39, 2, 2, 0);
+    color: white;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    margin: 0 20px;
+    position: relative;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: rgb(248, 248, 248);
+    font-weight: bold;
+    padding: 15px 10px;
+    display: block;
+    position: relative;
+}
+
+.nav-list a::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background-color: rgb(6, 110, 42);
+    transition: all 0.3s ease-in-out;
+    transform: translateX(-50%);
+}
+
+.nav-list a:hover::before {
+    width: 100%;
+}
+
+nav button {
+    background-color: rgba(240, 234, 118, 0.615);
+    padding: 10px 20px;
+    color: rgb(231, 5, 5);
+    border: 1px solid rgb(255, 255, 255);
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+nav button:hover {
+    background-color: rgba(255, 255, 255, 0.601);
+    color: #0487f3;
+}
+
+/* Style the product container */
+.product {
+    background-color: rgba(255, 255, 255, 0.623);
+    text-align: center;
+    margin: 40px auto;
+    width: 350px;
+    max-width: 600px;
+    padding: 20px;
+    border: 1px solid rgba(204, 204, 204, 0.818);
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgb(136, 232, 39)
+}
+
+.product img {
+    max-width: 100%;
+    height: 200px; /* Set a fixed height for images, adjust as needed */
+    border-radius: 5px;
+}
+
+.product h2 {
+    margin: 15px 0;
+}
+
+.product p {
+    margin: 5px 0;
+}
+
+.product button.add-to-cart {
+    background-color: rgba(161, 128, 93, 0.914);
+    color: rgb(251, 8, 76);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.product button.add-to-cart:hover {
+    background-color: #f1e42dc2;
+}

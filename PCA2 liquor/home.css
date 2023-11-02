@@ -1,0 +1,94 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fbfbfb;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgba(34, 34, 34, 0.118);
+    color: rgba(250, 7, 84, 0.982);
+    text-align: center;
+    padding: 2em 0;
+}
+/* Navigation bar styles */
+nav {
+    background-color: #22222200;
+}
+nav button {
+    background-color: rgba(240, 234, 118, 0.615);
+    padding: 10px 20px;
+    color: rgb(231, 5, 5);
+    border: 1px solid rgb(255, 255, 255);
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+nav button:hover {
+    background-color: rgba(255, 255, 255, 0.601);
+    color: #0487f3;
+}
+
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    background-color: #22222201;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(2, 27, 26);
+    font-weight: bold;
+}
+
+/* Style for the active link */
+nav a:hover {
+    color: rgb(255, 128, 1);
+}
+
+
+.section {
+    padding: 2em;
+}
+
+.featured-products h2 {
+    text-align: center;
+}
+
+
+.product {
+    text-align: center;
+    padding: 1em;
+}
+
+/* Set a specific width and height for the product images */
+.product img {
+    max-width: 100%;
+    height: 200px; /* Set the desired height */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.about-us {
+    background-color: #ffffff62;
+    text-align: center;
+}
+
+footer {
+    background-color: #22222200;
+    color: #da2259;
+    text-align: center;
+    padding: 1em 0;
+}

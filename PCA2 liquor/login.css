@@ -1,0 +1,55 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgba(223, 234, 122, 0.438);
+}
+
+.container {
+    background-color: transparent;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 10px rgb(232, 39, 84)
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #aeffa3;
+    border-radius: 3px;
+    box-shadow: 0 3px 10px rgb(20, 214, 201)
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #95cfaea9;
+    color: #1c0c0d;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgba(79, 230, 59, 0.664);
+}
